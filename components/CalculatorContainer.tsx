@@ -12,11 +12,11 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
 export default function CalculatorContainer() {
-  const [calculators, setCalculators] = useState<string[]>(["calc1"]);
+  const [calculators, setCalculators] = useState<string[]>(["calc_1"]);
 
   const addCalculator = () => {
     if (calculators.length < 4) {
-      const newId = `calc${calculators.length + 1}`;
+      const newId = `calc_${calculators.length + 1}`;
       setCalculators([...calculators, newId]);
     }
   };
