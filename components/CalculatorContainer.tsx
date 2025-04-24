@@ -9,6 +9,7 @@ import { Info, Plus } from "lucide-react";
 import { useState } from "react";
 import Calculator from "./Calculator";
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
 
 export default function CalculatorContainer() {
   const [calculators, setCalculators] = useState<string[]>(["calc1"]);
@@ -42,7 +43,7 @@ export default function CalculatorContainer() {
 
   return (
     <div className="p-4">
-      <div className="flex justify-end items-center mb-4 gap-2">
+      <div className="flex justify-center items-center mb-4 gap-2">
         <Button onClick={addCalculator} disabled={calculators.length >= 4}>
           <Plus />
           Add Calculator ({calculators.length}/4)
@@ -75,6 +76,7 @@ export default function CalculatorContainer() {
           </HoverCardContent>
         </HoverCard>
       </div>
+      <Separator className="my-2" />
 
       <div className="flex gap-4 items-center flex-wrap justify-center">
         {calculators.map((id, index) => (

@@ -2,7 +2,7 @@ import CalculatorContainer from "../components/CalculatorContainer";
 
 export default function Home() {
   return (
-    <main className="container">
+    <main className="">
       <CalculatorContainer />
     </main>
   );
