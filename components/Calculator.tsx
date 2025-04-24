@@ -1,7 +1,7 @@
 "use client";
 
 import { MoreHorizontal } from "lucide-react";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "./ui/button";
 
 import {
@@ -12,9 +12,8 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { CalculatorLog } from "./CalculatorLog";
-import { Badge } from "./ui/badge";
 import { cn } from "@/lib/utils";
+import { Badge } from "./ui/badge";
 
 // get a different colors for each calculator id
 
