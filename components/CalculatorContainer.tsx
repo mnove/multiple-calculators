@@ -12,7 +12,10 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 
 export default function CalculatorContainer() {
-  const [calculators, setCalculators] = useState<string[]>(["calc_1"]);
+  const [calculators, setCalculators] = useState<string[]>([
+    "calc_1",
+    "calc_2",
+  ]);
 
   const addCalculator = () => {
     if (calculators.length < 4) {
@@ -78,7 +81,7 @@ export default function CalculatorContainer() {
       </div>
       <Separator className="my-2" />
 
-      <div className="flex gap-4 items-center flex-wrap justify-center">
+      <div className="flex gap-4 items-start flex-wrap justify-center">
         {calculators.map((id, index) => (
           <div key={id} className="calculator-wrapper">
             <Calculator

@@ -1,9 +1,5 @@
 "use client";
 
-import { MoreHorizontal } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { Button } from "./ui/button";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,7 +9,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
+import { MoreHorizontal } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { CalculatorLog } from "./CalculatorLog";
 import { Badge } from "./ui/badge";
+import { Button } from "./ui/button";
 
 // get a different colors for each calculator id
 
@@ -398,6 +398,12 @@ export default function Calculator({
     return new Intl.NumberFormat(locale).format(num);
   };
 
+  // Clear operations history on click
+  const clearCalculatorOpsHistory = () => {
+    localStorage.removeItem(`calculatorHistory_${id}`);
+    setOperationHistory([]);
+  };
+
   return (
     <>
       <div className="flex gap-2 mb-2">
@@ -689,7 +695,10 @@ export default function Calculator({
         </div>
       </div>
 
-      {/* <CalculatorLog operations={operationHistory} /> */}
+      <CalculatorLog
+        operations={operationHistory}
+        clearCalculatorOpsHistory={clearCalculatorOpsHistory}
+      />
     </>
   );
 }

@@ -29,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
+        data-vaul-drawer-wrapper=""
       >
         <ThemeProvider
           attribute="class"
@@ -37,7 +38,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          <main className="min-h-screen mx-auto max-w-6xl p-4">{children}</main>
+          <main className="min-h-screen mx-auto max-w-8xl p-4">{children}</main>
 
           <Footer />
         </ThemeProvider>
