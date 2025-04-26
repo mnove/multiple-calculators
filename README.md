@@ -9,8 +9,12 @@ A simple, calculator app that allows you to perform multiple calculations in par
     <br />
     <br />
 
-  </p> -->
+  </p> 
 </div>
+
+  <a href="public/cover.jpg">
+    <img src="public/cover.jpg" alt="multiple-calculator" width="100%" height="auto">
+  </a>
 
 ## Overview
 
