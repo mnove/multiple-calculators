@@ -3,22 +3,18 @@
   <h3 align="center">Multiple Calculators, side-by-side</h3>
 
   <p align="center">
-A simple, sleep app that allows you to perform multiple calculations in parallel, with calculators next to each other.
+A simple, calculator app that allows you to perform multiple calculations in parallel, with calculators next to each other.
     <br />
-    <a href=""><strong>Try it now »</strong></a>
+    <a href="https://multiple-calculators.pages.dev/"><strong>Try it now »</strong></a>
     <br />
     <br />
-=
-    <!-- &middot;
-    <a href="/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
-    &middot;
-    <a href="/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+
   </p> -->
 </div>
 
 ## Overview
 
-A simple, sleep app that allows you to perform multiple calculations in parallel, with calculators next to each other. The app is designed to be simple and easy to use, with a focus on providing a clean and intuitive user interface.
+A simple, calculator app that allows you to perform multiple calculations in parallel, with calculators next to each other. The app is designed to be simple and easy to use, with a focus on providing a clean and intuitive user interface.
 
 ## Built With
 
@@ -30,3 +26,15 @@ A simple, sleep app that allows you to perform multiple calculations in parallel
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Tailwind]: https://img.shields.io/badge/tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[shadcn/ui]: https://img.shields.io/badge/shadcnui-000000?style=for-the-badge&logo=shadcnui&logoColor=white
+[shadcn/ui-url]: https://ui.shadcn.com
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/

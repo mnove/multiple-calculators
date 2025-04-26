@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Calculator App",
-  description: "A simple calculator application",
+  title: "Side-by-side Calculator App",
+  description: `A simple, calculator app that allows you to perform multiple calculations in parallel, with calculators next to each other. The app is designed to be simple and easy to use, with a focus on providing a clean and intuitive user interface.`,
 };
 
 export default function RootLayout({
